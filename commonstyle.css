@@ -4,8 +4,10 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-attachment: fixed;
-    height: 1356;
-    width: 2048;
+    background-width: 100% auto;
+    background-color: #F4F4F2;
+    /*height: 1356;
+    width: 2048;*/
 	}
 	
 	/* Navigation bar characteristics are defined below */
