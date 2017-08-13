@@ -1,8 +1,21 @@
 	/* A fixed background image is added below */
-	body {
-overflow: hidden; // added for pseudo-element
-position: relative; // added for pseudo-element
- // Fixed-position background image
+html {  
+    background: url('https://c1.staticflickr.com/5/4247/34911566612_516b5a9aaa_k.jpg') no-repeat top center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {  
+    height:100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+
+}
+/*body {
+   overflow: hidden; // added for pseudo-element
+   position: relative; // added for pseudo-element
+	// Fixed-position background image
    &::before {
       content: ' ';
       position: fixed; // instead of background-attachment
@@ -10,17 +23,20 @@ position: relative; // added for pseudo-element
       height: 100%;
       top: 0;
       left: 0;
-      background: url("https://c1.staticflickr.com/5/4247/34911566612_516b5a9aaa_k.jpg") no-repeat center center;
+      background: url('https://c1.staticflickr.com/5/4247/34911566612_516b5a9aaa_k.jpg') no-repeat center center;
       background-size: cover;
       will-change: transform; // creates a new paint layer
       z-index: -1; //ensures image is behind everything else
    }
-    /*background-image: url("https://c1.staticflickr.com/5/4247/34911566612_516b5a9aaa_k.jpg");
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-attachment: fixed;
-    background-size: cover;*/
-	}
+   }
+    /* background-image: url("https://c1.staticflickr.com/5/4247/34911566612_516b5a9aaa_k.jpg");
+     background-repeat: no-repeat;
+     background-position: top left;
+     background-attachment: fixed;
+       background-size: cover;
+    height: 1356;
+    width: 2048;*/
+	
 	
 	/* Navigation bar characteristics are defined below */
 	.menuBar {
