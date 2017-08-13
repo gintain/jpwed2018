@@ -1,5 +1,7 @@
 	/* A fixed background image is added below */
 	body {
+overflow: hidden; // added for pseudo-element
+position: relative; // added for pseudo-element
  // Fixed-position background image
    &::before {
       content: ' ';
