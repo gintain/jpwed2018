@@ -4,8 +4,7 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-attachment: fixed;
-    background-width: 100% auto;
-    background-color: #F4F4F2;
+    background-size: cover;
     /*height: 1356;
     width: 2048;*/
 	}
