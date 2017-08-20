@@ -2,80 +2,53 @@
 html {  
     background: url('https://c1.staticflickr.com/5/4247/34911566612_516b5a9aaa_k.jpg') no-repeat top center fixed;
     background-size: cover;
+    margin-top: -24px;
     height: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 h2 {
   font: 400 75px/0.8 'Great Vibes', Helvetica, sans-serif;
-  color: #fff;
-  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 1
+  color: rgb(245,245,220);
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
   text-align: right;
 }
 
 body {  
-    position: fixed;
-    top: 0;
-    left: 0;
-    height:100%;
+    height: 100%;
     width: 100%;
-    overflow: scroll;
+    overflow: hidden; //scroll
     -webkit-overflow-scrolling: touch;
 
 }
-/*body {
-   overflow: hidden; // added for pseudo-element
-   position: relative; // added for pseudo-element
-	// Fixed-position background image
-   &::before {
-      content: ' ';
-      position: fixed; // instead of background-attachment
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: url('https://c1.staticflickr.com/5/4247/34911566612_516b5a9aaa_k.jpg') no-repeat center center;
-      background-size: cover;
-      will-change: transform; // creates a new paint layer
-      z-index: -1; //ensures image is behind everything else
-   }
-   }
-    /* background-image: url("https://c1.staticflickr.com/5/4247/34911566612_516b5a9aaa_k.jpg");
-     background-repeat: no-repeat;
-     background-position: top left;
-     background-attachment: fixed;
-       background-size: cover;
-    height: 1356;
-    width: 2048;*/
-	
+
 	
 	/* Navigation bar characteristics are defined below */
-	.menuBar {
-		list-style: none;
-		margin: 0;
-		padding: 0;
+	.container {
+	    margin: 0 auto;
+	    text-align: center;
+	    }
+	    
+	#menuBar {
 		background-color: rgba(128,128,128,0.85);
 		top: 0;
-		width: 100%;
-		height: 80px;
-		position: fixed;
+		width: 480px;
+		height: 48px;
 		display: block;
 	}
 	
-	.menuBar li {
+	#menuBar li {
 		list-style-type: none;
+		display: inline-block;
 	}
 	
-	.menuBar li a {
+	#menuBar li a {
 		list-style: none;
-		float: left;
 		display: inline-block;
 	}
 
 	li a, .dropbtn {
-		display: inline-block;
-		color: white;
+		color: rgb(245,245,220);
 		padding: 14px 16px;
 		text-decoration: none;
 	}
@@ -85,39 +58,41 @@ body {
 		background-color: #111;
 	}
 
-	li.dropdown {
-		position: relative;
+	.dropdown {
+	    position: relative;
 		display: inline-block;
 	}
 
 	.dropdown-content {
+	    position: absolute;
 		display: none;
-		position:absolute;
 		top: 100%;
 		background-color: #f9f9f9;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		z-index: 1;
 	}
+	
+    ul {
+        padding: 0;
+        }
 
 	.dropdown-content a {
+	    list-style: none;
+	    position: relative;
 		color: black;
-		padding: 12px 16px;
 		text-decoration: none;
-		display: block;
-		text-align: left;
+		background-color: #f1f1f1;
+		display: inline-block;
 	}
-
+     
 	.dropdown:hover .dropdown-content {
 		display: block;
 	}
 	
-	.menuBar ul li ul {
-		padding: 0;
-	}
 	
 	/* This enables the current active menu option to be highlighted */
 	.active {
-		background-color: #4CAF50;
+		background-color: #C0C0C0;
 	}
 	
 	
