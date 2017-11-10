@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Wedding</title>
+<link rel='stylesheet' type='text/css' href='commonstyle.css'/>
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+
+</head> 
+<body>
+<div class="container" id="menuBar">
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Travel & Lodging</a>
+		 <div class="dropdown-content">
+	     <ul>
+         <li><a href="Travel.html">Travel</a></li>
+         <li><a href="Lodging.html">Lodging</a></li>
+         <li><a href="WhatToDo.html">What To Do</a></li>
+         </ul>
+         </div>
+  <li><a href="Itinerary.html">Itinerary</a></li>
+  <li><a href="Photos.html">Photos</a></li>
+  <li><a href="Registry.html">Registry</a></li>
+  <li><a class="active" href="Contact.html">RSVP</a></li>
+    </li>
+</ul>
+</div>
+
+<div id="content">
+<h1 align="center"><font face="palatino"></font>Destination: Jay Peak Resort</h1>
+
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var jaypeak = {lat: 44.9377, lng: -72.5049};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: jaypeak
+        });
+        var marker = new google.maps.Marker({
+          position: jaypeak,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC97xOdQEx_2XsGhk61oMAVgONVZ5veqTI&callback=initMap">
+    </script>
+
+<p>Located just ten miles (driving distance) from the Canadian border, reaching Jay Peak Resort requires a bit of driving.
+Listed below are the nearest airports.</p>
+
+<p>The Burlington International Airport (IATA airport code BTV) is about 1.5 hours from Jay.
+More information can be found at the airport's <a href="http://www.btv.aero/index.php/arrivals-departures/air">website</a>.</p>
+
+<p>The nearest large metropolitan area is Montreal, Quebec, which is about 1.75 hours from Jay.
+While you can rent a car and cross the border, be sure to research any fees or taxes for doing so. It may be preferable to take a Greyhound bus to Burlington, VT, and rent there.
+The larger airport is the Montreal/Pierre Elliott Trudeau Internation Airport (IATA airport code YUL) More information can be found <a href="http://www.admtl.com/en">here</a>.</p>
+
+<p>The nearest large metropolitan area in the US is Boston, MA, at a scenic 3.5 hours away.
+Logan International Airport's IATA code is BOS.</p>
+
+<p>New York, NY, is an incredibly scenic 6.25 hours away. There are three large airports to choose from (IATA code provided in parentheses).
+Fly to John F Kennedy International Airport (JFK), LaGuardia Airport (LGA), or Newark International Airport (EWR).</p>
+
+<p>Finally, don't forget to check some of the smaller airports in the area for potential deals.
+Some airports to consider are Manchester-Boston Regional Airport (MHT) in Manchester, NH, TF Green Aiport (PVD) in Providence, RI,
+Bradley International Airport (BDL) in Hartford, CT, Portland International Jetport (PWM) in Portland, ME,
+Albany International Airport (ALB) in Albany, NY, and Westchester County Airport (HPN) in White Plains, NY.</p>
+</div>
+</body>
+</html>
