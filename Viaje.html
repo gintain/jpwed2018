@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="referrer" content="origin"/>
+<title>Nuestra Boda</title>
+<link rel='stylesheet' type='text/css' href='commonstyle.css'/>
+</head> 
+<body>
+<div class="container" id="menuBar">
+ <ul>
+  <li><a href="portada.html">Portada</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Viaje</a>
+		 <div class="dropdown-content">
+	     <ul>
+         <li><a href="Viaje.html">Aeropuertos</a></li>
+         <li><a href="Alojamiento.html">Alojamiento</a></li>
+         <li><a href="Paraver.html">Para Ver</a></li>
+         </ul>
+         </div>
+  <li><a href="Itinerario.html">Itinerario</a></li>
+  <li><a href="Fotos.html">Fotos</a></li>
+  <li><a href="Registro.html">Registro</a></li>
+  <li><a class="active" href="Contactar.html">Contactar</a></li>
+  <li><a href="index.html">English</a></li>
+    </li>
+</ul>
+</div>
+
+<div id="content">
+<h1 align="center"><font face="palatino"></font>Destino: Jay Peak Resort</h1>
+
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var jaypeak = {lat: 44.9377, lng: -72.5049};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: jaypeak
+        });
+        var marker = new google.maps.Marker({
+          position: jaypeak,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC97xOdQEx_2XsGhk61oMAVgONVZ5veqTI&callback=initMap">
+    </script>
+
+<p>Ubicado solamente diez millas por carro de la frontera con Canad&#225;, llegar a Jay Peak Resort requiere
+manejar. A continuaci&#243;n se enumeran los aeropuertos m&#225;s cercanos.</p>
+
+<p> El Aeropuerto Internacional de Burlington (c&#243;digo BTV) est&#225; a aproximadamente una hora y media de Jay.
+M&#225;s informaci&#243;n est&#225; <a href="http://www.btv.aero/index.php/arrivals-departures/air">aqu&#237;</a>.</p>
+
+<p> La ciudad m&#225;s cercana es Montreal, Quebec, que queda un poco menos de dos horas de Jay. Aseg&#250;rese
+de investigar cualquier tarifa o impuesto por rentar un carro y cruzar la frontera. Otra opcion es tomar
+un autob&#250;s Greyhound a Burlington, VT, y rentar un carro all&#237;. El aeropuerto m&#225;s grande es el
+Aeropuerto Internacional de Montreal/Pierre Elliott Trudeau (c&#243;digo  YUL). M&#225;s informaci&#243;n est&#225; <a href="http://www.admtl.com/en">aqu&#237;</a>.</p>
+
+<p>La ciudad m&#225;s cercana en los EE.UU. es Boston, MA, que est&#225; tres horas y media de Jay. El
+c&#243;digo del Aeropuerto Internacional de Logan es BOS.</p>
+
+<p>Nueva York queda un poco mas de seis horas de Jay. Hay tres aeropuertos para escoger (c&#243;digo en par&#233;ntesis).
+Volar al Aeropuerto Internacional John F Kennedy (JFK), Aeropuerto LaGuardia (LGA), o Aeropuerto Internacional de Newark (EWR).</p>
+
+<p>Tambi&#233;n considere aeropuertos peque&#241;os. Algunos cercanos son el Aeropuerto Regional de Manchester-Boston (MHT) en Manchester, NH,
+Aeropuerto TF Green (PVD) en Providence, RI, Aeropuerto Internacional Bradley (BDL) en Hartford, CT, 
+Jetport Internacional de Portland (PWM) en Portland, ME, Aeropuerto Internacional de Albany (ALB) en Albany, NY,
+y el Aeropuerto del Conado de Westchester (HPN) en White Plains, NY.</p>
+</div>
+</body>
+</html>

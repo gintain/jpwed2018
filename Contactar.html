@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="referrer" content="origin"/>
+<title>Nuestra Boda</title>
+<link rel='stylesheet' type='text/css' href='commonstyle.css'/>
+</head> 
+<body>
+<div class="container" id="menuBar">
+ <ul>
+  <li><a href="portada.html">Portada</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Viaje</a>
+		 <div class="dropdown-content">
+	     <ul>
+         <li><a href="Viaje.html">Aeropuertos</a></li>
+         <li><a href="Alojamiento.html">Alojamiento</a></li>
+         <li><a href="Paraver.html">Para Ver</a></li>
+         </ul>
+         </div>
+  <li><a href="Itinerario.html">Itinerario</a></li>
+  <li><a href="Fotos.html">Fotos</a></li>
+  <li><a href="Registro.html">Registro</a></li>
+  <li><a class="active" href="Contactar.html">Contactar</a></li>
+  <li><a href="index.html">English</a></li>
+    </li>
+</ul>
+</div>
+<div id="rsvp">
+<form method="POST" action="https://formspree.io/christophermonica2018@gmail.com">
+  Confirmar Asistencia <br>
+  <input type="text" name="name" placeholder="Nombre"><br>
+  <input type="email" name="email" placeholder="Apellido"><br>
+  &#191;Podr&#225;s asistir a nuestra boda?<br>
+  <input type="radio" name="boolean" value="yes"> Si&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="radio" name="boolean" value="no"> No<br>
+  <input type="hidden" name="_next" value="https://gintain.github.io/jpwed2018/">
+  <button type="submit">Enviar</button>
+</form>
+<br><br><br>
+<form method="POST" action="https://formspree.io/christophermonica2018@gmail.com">
+  Contactar<br>
+  <input type="text" name="name" placeholder="Nombre"><br>
+  <input type="email" name="email" placeholder="Apellido"><br>
+  <textarea name="message" placeholder="Mensaje"></textarea><br>
+  <input type="hidden" name="_next" value="https://gintain.github.io/jpwed2018/">
+  <button type="submit">Enviar</button>
+</form>
+</div>
+</body>
+</html>
